@@ -1,0 +1,141 @@
+<?php
+                                            
+                                            $query2 = "SELECT * FROM posts WHERE post_id = $comment_post_id ";
+                                            $select_post_title = mysqli_query($connection,$query2);
+                                                while($row = mysqli_fetch_assoc($select_post_title))
+                                                    {   
+                                                        $the_post_id = $row['post_id'];
+                                                        $post_title = $row['post_title'];
+                                                    echo "<a href='../includes/show_the_post.php?p_id=$the_post_id'>$post_title</a>";
+                                                    
+//                                            echo "<a href='post.php?xox=$the_post_id'>". "$post_title</a>";
+                                                    }
+//                                            $query = "SELECT * FROM comments WHERE comment_id = post_category_id";
+//                                            $select_post_title = mysqli_query($connection,$query);
+//                                            while($row = mysqli_fetch_assoc($select_post_title))
+//                                            {   
+//                                                $the_comment_id = $row['comment_id'];
+//                                                $comment_post_id = $row['comment_post_id'];
+//                                                $post_title = $row['post_title'];
+//                                            }
+//                                        post.php?p_id=13
+                                           
+                                        ?>
+                                        
+                                        
+                                        
+                                        
+                                         <?php
+//                                            $query = "SELECT * FROM categories WHERE cat_id ={$post_category_id}  ";
+//                                            $show_cat_query = mysqli_query($connection,$query);
+//                                            while($row = mysqli_fetch_assoc($show_cat_query))
+//                                            {
+//                                                $cat_id = $row['cat_id'];   
+//                                                $cat_title = $row['cat_title'];  
+//                                                echo $cat_title;
+//                                            }
+                                    ?>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses', 'Profit'],
+          ['2014', 1000, 400, 200],
+          ['2015', 1170, 460, 250],
+          ['2016', 660, 1120, 300],
+          ['2017', 1030, 540, 350]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Company Performance',
+            subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+  </head>
+  <body>
+    <div id="columnchart_material" style="width: 800px; height: 500px;"></div>
+  </body>
+</html>4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <?php
+                                        ////////// selecting all post not draft \\\\\\\\
+//    
+//                                                $query = "SELECT * FROM posts WHERE post_status = 'draft'";
+//                                                $select_all_draft_posts = mysqli_query($connection, $query);
+//                                                $draft_post_count = mysqli_num_rows($select_all_draft_posts);
+//
+//                                    ////////// END of the selecting Code \\\\\\\\\\
+//
+//
+//                                        ////////// selecting all comments not draft \\\\\\\\
+//
+//                                                $query = "SELECT * FROM comments WHERE comment_status = 'Unapprove'";
+//                                                $select_all_unapprove_comments = mysqli_query($connection, $query);
+//                                                $unapprove_comment_count = mysqli_num_rows($select_all_unapprove_comments);
+//
+//                                         ////////// END of the selecting Code \\\\\\\\\\
+//
+//                                        ////////// selecting all sub users not draft \\\\\\\\
+//
+//                                                $query = "SELECT * FROM users WHERE user_role = 'subscriper'";
+//                                                $select_all_subscriper_users = mysqli_query($connection, $query);
+//                                                $subscriper_users_count = mysqli_num_rows($select_all_subscriper_users);
+
+                                         ////////// END of the selecting Code \\\\\\\\\\
+                ?>
+                
